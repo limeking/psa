@@ -1,1 +1,7 @@
--- MySQL 초기 데이터
+CREATE DATABASE IF NOT EXISTS sampledb;
+USE sampledb;
+CREATE TABLE IF NOT EXISTS hello (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    msg VARCHAR(100)
+);
+INSERT INTO hello (msg) VALUES ('Hello from MySQL!');
